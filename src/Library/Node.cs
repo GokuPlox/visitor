@@ -7,12 +7,12 @@ namespace Library
     public class Node <T> 
     {
        
-        private List<T> children = new List<T>();
+        private List<Node<T>> children = new List<Node<T>>();
         private T thing {get;set;} 
 
       
 
-        public ReadOnlyCollection<T> Children { 
+        public ReadOnlyCollection<Node<T>> Children { 
             get
             {
                 return this.children.AsReadOnly();
@@ -25,7 +25,7 @@ namespace Library
             this.thing= t;
         }
 
-        public void AddChildren(T n)
+        public void AddChildren(Node<T> n)
         {
             this.children.Add(n);
         }

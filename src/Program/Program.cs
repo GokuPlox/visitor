@@ -24,18 +24,18 @@ namespace Program
             Person p8 = new Person("Ricardo", 40);
             Node<Person> n8 = new Node<Person>(p8);
 
-            n1.AddChildren(p2);
-            n1.AddChildren(p3);
+            n1.AddChildren(n2);
+            n1.AddChildren(n3);
 
-            n2.AddChildren(p4);
-            n2.AddChildren(p5);
+            n2.AddChildren(n4);
+            n2.AddChildren(n5);
 
-            n3.AddChildren(p6);
-            n3.AddChildren(p7);
+            n3.AddChildren(n6);
+            n3.AddChildren(n7);
 
-            n8.AddChildren(p2);
-            n8.AddChildren(p1);
-            n8.AddChildren(p3);
+            n8.AddChildren(n2);
+            n8.AddChildren(n1);
+            n8.AddChildren(n3);
 
             // visitar el árbol aquí
         }
